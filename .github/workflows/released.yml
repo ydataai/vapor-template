@@ -8,9 +8,9 @@ on:
 
 
 env:
-  COMPONENT: dashboard-api
-  COMPONENT_PATH: apps/dashboard-api
-  DOCKER_IMAGE_URL: ${{ secrets.PRIVATE_CONTAINER_REGISTRY }}/${{ github.repository_owner }}/dashboard-api
+  COMPONENT: {{name}}
+  COMPONENT_PATH: apps/{{name}}
+  DOCKER_IMAGE_URL: ${{ secrets.PRIVATE_CONTAINER_REGISTRY }}/${{ github.repository_owner }}/{{name}}
 
 
 jobs:

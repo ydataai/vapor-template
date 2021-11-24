@@ -1,13 +1,15 @@
-name: Merge Master
+name: Merge Main
+
 
 on:
   push:
     branches:
-    - master
+    - main
+
 
 jobs:
   prepare:
-    name: Calculate Version and build number
+    name: Calculate Version and Build number
     runs-on: ubuntu-20.04
 
     outputs:
