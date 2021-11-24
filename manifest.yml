@@ -1,8 +1,5 @@
 name: Vapor Template
 variables:
-  - name: pipelines
-    description: Would you like to configure pipeliens?
-    type: bool
   - name: fluent
     description: Would you like to use Fluent?
     type: nested
@@ -86,12 +83,6 @@ files:
           - file: index.leaf
   - file: Dockerfile
     dynamic: true
-  - folder: .github
-    files:
-    - folder: workflows
-      if: pipelines
-  - file: .releaserc.json
-    if: pipelines
   - .gitignore
   - .dockerignore
   - .releaserc.json
