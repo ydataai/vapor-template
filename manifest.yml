@@ -85,5 +85,3 @@ files:
     dynamic: true
   - .gitignore
   - .dockerignore
-  - .releaserc.json
-  - .swift-format
