@@ -1,5 +1,8 @@
 name: Vapor Template
 variables:
+  - name: pipelines
+    description: Would you like to configure pipeliens?
+    type: bool
   - name: fluent
     description: Would you like to use Fluent?
     type: nested
@@ -43,11 +46,6 @@ variables:
   - name: leaf
     description: Would you like to use Leaf?
     type: bool
-  - name: pipelines
-    description: Would you like to configure pipeliens?
-    type: nested
-    variables:
-    - name: 
 files:
   - file: Package.swift
     dynamic: true
