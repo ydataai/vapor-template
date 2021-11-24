@@ -103,16 +103,16 @@ files:
       if: pipelines
       files:
       - file: pull-request.yml
-        if: pipelines.pull
+        if: pull
         dynamic: true
       - file: merge-main.yml
-        if: pipelines.merge
+        if: merge
         dynamic: true
       - file: prereleased.yml
-        if: pipelines.prerelease
+        if: prerelease
         dynamic: true
       - file: released.yml
-        if: pipelines.release
+        if: release
         dynamic: true
     - dependabot.yml
   - file: Dockerfile
