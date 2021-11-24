@@ -14,7 +14,7 @@ variables:
       description: Would you like to run prereleased workflow?
       type: bool
     - name: release
-      decription: Would you like to run released workflow?
+      description: Would you like to run released workflow?
       type: bool
   - name: fluent
     description: Would you like to use Fluent?
