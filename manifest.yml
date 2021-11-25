@@ -2,20 +2,7 @@ name: YData Vapor Template
 variables:
   - name: pipelines
     description: Would you like to have pipelines?
-    type: nested
-    variables:
-    - name: pull
-      description: Would you like to run Pull request validation workflow?
-      type: bool
-    - name: merge
-      description: Would you like to run Merge to master workflow?
-      type: bool
-    - name: prerelease
-      description: Would you like to run prereleased workflow?
-      type: bool
-    - name: release
-      description: Would you like to run released workflow?
-      type: bool
+    type: bool
   - name: fluent
     description: Would you like to use Fluent?
     type: nested
@@ -102,18 +89,10 @@ files:
     - folder: workflows
       if: pipelines
       files:
-      - file: pull-request.yml
-        if: pull
-        dynamic: true
-      - file: merge-main.yml
-        if: merge
-        dynamic: true
-      - file: prereleased.yml
-        if: prerelease
-        dynamic: true
-      - file: released.yml
-        if: release
-        dynamic: true
+      - merge-main.yml
+      - pull-request.yml
+      - prereleased.yml
+      - released.yml
     - dependabot.yml
   - file: Dockerfile
     dynamic: true
