@@ -102,4 +102,3 @@ files:
   - .dockerignore
   - .swift-format
   - Makefile
-  
