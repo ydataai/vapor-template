@@ -8,6 +8,12 @@ This template is based on the [vapor original one](https://github.com/vapor/temp
 
 `vapor new <name> --template https://github.com/ydataai/vapor-template`
 
-## .github folder
+## Structure
+
+### .github folder
 
 Contains the workflows used in the pipelines to validate, test and build a docker for the application.
+
+## About 👯‍♂️
+
+With ❤️ from [YData](https://ydata.ai) [Development team](mailto://developers@ydata.ai)

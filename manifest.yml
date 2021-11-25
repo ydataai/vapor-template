@@ -98,6 +98,7 @@ files:
     dynamic: true
   - file: .releaserc.json
     if: pipelines
+  - .editorconfig
   - .gitignore
   - .dockerignore
   - .swift-format
