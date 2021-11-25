@@ -97,7 +97,7 @@ files:
   - file: Dockerfile
     dynamic: true
   - file: .releaserc.json
-    if: pipeline
+    if: pipelines
   - .gitignore
   - .dockerignore
   - .swift-format
