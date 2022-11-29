@@ -8,7 +8,7 @@ let package = Package(
     ],
     dependencies: [
         // 💧 A server-side Swift web framework.
-        .package(url: "https://github.com/vapor/vapor.git", from: "4.0.0"),{{#fluent}}
+        .package(url: "https://github.com/vapor/vapor.git", from: "4.67.4"),{{#fluent}}
         .package(url: "https://github.com/vapor/fluent.git", from: "4.0.0"),
         .package(url: "https://github.com/vapor/fluent-{{fluent.db.url}}-driver.git", from: "{{fluent.db.version}}"),{{/fluent}}{{#leaf}}
         .package(url: "https://github.com/vapor/leaf.git", from: "4.0.0"),{{/leaf}}
